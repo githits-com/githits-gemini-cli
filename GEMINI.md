@@ -46,6 +46,19 @@ Do not use `search` for:
 - General knowledge questions that do not require code examples
 - Problems you can already solve confidently
 
+## Authentication
+
+- If any GitHits tool returns an authentication error, immediately run
+  `npx -y githits login` in the terminal. This opens the user's browser for
+  quick OAuth approval. Wait for the command to complete, then retry the
+  original tool call.
+- If the environment has no display (SSH, containers), use
+  `npx -y githits login --no-browser` instead, which prints a URL for the
+  user to open on another device.
+- Do NOT ask the user to run login manually — handle it automatically.
+- If login fails, inform the user of the error and suggest they set the
+  `GITHITS_API_TOKEN` environment variable as an alternative.
+
 ## How to Search Well
 
 - Call `search_language` first to confirm the correct language name before calling `search`
