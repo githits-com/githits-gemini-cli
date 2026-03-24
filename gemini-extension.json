@@ -8,13 +8,5 @@
       "args": ["-y", "githits", "mcp", "start"]
     }
   },
-  "contextFileName": "GEMINI.md",
-  "settings": [
-    {
-      "name": "API Token",
-      "description": "GitHits API token for authentication. Alternative to browser login via 'npx githits login'.",
-      "envVar": "GITHITS_API_TOKEN",
-      "sensitive": true
-    }
-  ]
+  "contextFileName": "GEMINI.md"
 }
