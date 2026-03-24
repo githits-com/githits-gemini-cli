@@ -1,0 +1,22 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Package archive
+        run: tar -czf githits.tar.gz gemini-extension.json GEMINI.md README.md LICENSE
+
+      - name: Create release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: githits.tar.gz
