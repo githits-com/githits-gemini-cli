@@ -56,8 +56,7 @@ Do not use `search` for:
   `npx -y githits login --no-browser` instead, which prints a URL for the
   user to open on another device.
 - Do NOT ask the user to run login manually — handle it automatically.
-- If login fails, inform the user of the error and suggest they set the
-  `GITHITS_API_TOKEN` environment variable as an alternative.
+- If login fails, inform the user of the error.
 
 ## How to Search Well
 
