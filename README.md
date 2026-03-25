@@ -8,6 +8,8 @@ The extension uses the [`githits`](https://www.npmjs.com/package/githits) npm pa
 
 ## Install
 
+**You need a GitHits account.** [Sign up here](https://githits.com) before installing.
+
 ```sh
 gemini extensions install https://github.com/githits-com/githits-gemini-cli
 ```
