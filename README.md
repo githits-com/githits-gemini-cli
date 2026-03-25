@@ -4,6 +4,8 @@ Code examples from global open source for developers and AI assistants.
 
 GitHits extension for [Gemini CLI](https://github.com/google-gemini/gemini-cli). Connects your assistant to the [GitHits](https://githits.com) MCP server for access to code examples from open source.
 
+The extension uses the [`githits`](https://www.npmjs.com/package/githits) npm package to connect to the GitHits MCP server.
+
 ## Install
 
 ```sh
