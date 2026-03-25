@@ -12,22 +12,14 @@ gemini extensions install https://github.com/githits-com/githits-gemini-cli
 
 ## Authentication
 
-GitHits requires authentication. Two options:
+GitHits requires authentication. Gemini handles this automatically — on first use it will open your browser for OAuth authorization.
 
-### Browser Login (recommended)
-
-```sh
-npx githits login
-```
-
-Opens your browser for secure OAuth authentication. Tokens are stored locally and refreshed automatically.
-
-### API Token
-
-For environments where browser login is not practical, set an API token. Gemini CLI will prompt you to enter the token securely on first use, or you can set it manually:
+If you run into authentication issues, you can manage credentials manually:
 
 ```sh
-export GITHITS_API_TOKEN=ghi-your-token-here
+npx githits login         # Log in via browser
+npx githits auth status   # Check authentication status
+npx githits logout        # Remove stored credentials
 ```
 
 ## Tools
